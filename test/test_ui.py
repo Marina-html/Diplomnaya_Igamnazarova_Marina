@@ -14,12 +14,6 @@ def test_auth_1():
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-    # Ожидание и клик по первой кнопке
-    #first_button = WebDriverWait(driver, 30).until(
-    #   EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "popmechanic-close")]'))
-    #)
-    #first_button.click()
-
     with allure.step("Click on the button"):
         second_button = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, '//*[contains(@class, "v-icon-user-14")]'))
@@ -59,11 +53,6 @@ def test_auth_block():
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-    # Ожидание и клик по первой кнопке
-    #first_button = WebDriverWait(driver, 30).until(
-    #   EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "popmechanic-close")]'))
-    #)
-    #first_button.click()
 
     with allure.step("Click on the button"):
         second_button = WebDriverWait(driver, 30).until(
@@ -103,11 +92,6 @@ def test_min_count():
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-    # Ожидание и клик по первой кнопке
-    # first_button = WebDriverWait(driver, 30).until(
-    #   EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "popmechanic-close")]'))
-    # )
-    # first_button.click()
 
     with allure.step("Click on the nights field"):
         night_press = WebDriverWait(driver, 30).until(
@@ -141,11 +125,6 @@ def test_from_city():
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-    # Ожидание и клик по первой кнопке
-    # first_button = WebDriverWait(driver, 30).until(
-    #   EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "popmechanic-close")]'))
-    # )
-    # first_button.click()
 
     with allure.step("Wait for and input the departure city"):
         city_input = WebDriverWait(driver, 30).until(
@@ -172,11 +151,6 @@ def test_to_city():
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-    # Ожидание и клик по первой кнопке
-    # first_button = WebDriverWait(driver, 30).until(
-    #   EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "popmechanic-close")]'))
-    # )
-    # first_button.click()
 
     with allure.step("Wait for and input the arrival city"):
         city_input_to = WebDriverWait(driver, 30).until(
